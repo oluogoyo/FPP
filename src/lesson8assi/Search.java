@@ -16,15 +16,15 @@ class Search {
 
 	boolean recurse(int a, int b, String val) {
 		int mid = (a+b)/2;
+		
 		if(anArray[mid].equalsIgnoreCase(val)) 
 			return true;
+		
 		if(a > b) return false;
 		
-		if(val.equalsIgnoreCase(anArray[mid]);
+		if(val.equalsIgnoreCase(anArray[mid]))
+			return recurse(mid+1, b, val);
 				
-				return recurse
-						
-				(mid+1, b, val);
 		return recurse(a,mid-1,val);
 	}
 }
