@@ -1,4 +1,6 @@
-package lesson8assi;
+package src.lesson8assi;
+
+import lesson8assi.Person;
 
 public class PeronList {
 	private final int INITIAL_LENGTH = 4;
@@ -18,9 +20,9 @@ public class PeronList {
 		personArr[size++]= person;
 	}
 
-	public void resize() {
-
-	}
+//	public void resize() {
+//
+//	}
 	//get method
 	public Person get(int i) {
 		if(i< 0 || i> size)
@@ -67,8 +69,8 @@ public class PeronList {
 		}
 		if(index==-1) return false;
 		Person[] temp = new Person[personArr.length];
-		Person.arraycopy(personArr,0,temp,0,index);
-		Person.arraycopy(personArr,index+1,temp,index,personArr.length-(index+1));
+		System.arraycopy(personArr,0,temp,0,index);
+		System.arraycopy(personArr,index+1,temp,index,personArr.length-(index+1));
 		personArr = temp;
 		--size;
 		return true;

@@ -85,11 +85,20 @@ public class MyStringList {
 
 	public static void main(String[] args){
 		MyStringList l = new MyStringList();
-		l.add("Bob");
-		l.add("Steve");
-		l.add("Susan");
-		l.add("Mark");
-		l.add("Dave");
+		l.add("big");
+		l.add("small");
+		l.add("tall");
+		l.add("short");
+		l.add("round");
+		l.add("squre");
+		l.add("enormous");
+		l.add("tiny");
+		l.add("enormous");
+		l.add("lilliputian");
+		l.add("numberless");
+		l.add("none");
+		l.add("vast");
+		l.add("miniscule");
 		System.out.println("The list of size "+l.size()+" is "+l);
 		l.remove("Mark");
 		l.remove("Bob");
